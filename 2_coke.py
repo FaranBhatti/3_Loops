@@ -7,6 +7,7 @@ Created:                     Faran Bhatti
 Edited:                      2023-03-01 by Faran Bhatti (FB)
 Last Edited:                 2023-03-01 by Faran Bhatti (FB)
 """
+
 def main():
     # Price of coke is 50 cents passed to the function change_owed
     change_owed(50)
