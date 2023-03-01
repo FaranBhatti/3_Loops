@@ -7,4 +7,24 @@ Created:                     Faran Bhatti
 Edited:                      2023-03-01 by Faran Bhatti (FB)
 Last Edited:                 2023-03-01 by Faran Bhatti (FB)
 """
+def main():
+    # Price of coke is 50 cents passed to the function change_owed
+    change_owed(50)
 
+def change_owed(price_coke):
+    while (price_coke > 0):
+        print(f"Amount Due: {price_coke}")
+        coin_inserted = int(input("Insert Coin: "))
+        match coin_inserted:
+            case 25:
+                price_coke -= coin_inserted            
+            case 10:
+                price_coke -= coin_inserted
+            case 5:
+                price_coke -= coin_inserted
+            case _:
+                pass
+        if (price_coke <= 0):
+            print(f"Change Owed: {abs(price_coke)}")
+
+main()
